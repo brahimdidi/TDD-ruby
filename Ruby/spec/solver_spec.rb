@@ -47,5 +47,10 @@ describe Solver do
       expected_result = "fizzbuzz"
       expect(result).to eql(expected_result)
     end
+    it "returns the number when n is not divisible by 3 or 5" do
+      result = solver.fizzbuzz(7)
+      expected_result = '7'
+      expect(result).to eql(expected_result)
+    end
   end
 end
