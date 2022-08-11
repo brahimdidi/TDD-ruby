@@ -15,7 +15,12 @@ describe Solver do
       result = solver.factorial(0);
       expected_result = 1
       expect(result).to eql(expected_result)
-  end
+    end
+    it "return the right factorial value for n=3" do
+      result = solver.factorial(3);
+      expected_result = 6
+      expect(result).to eql(expected_result)
+    end
   end
 
 end
