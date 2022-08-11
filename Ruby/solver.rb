@@ -1,19 +1,21 @@
-class Solver 
+class Solver
   def factorial(n)
     if n.zero?
       1
     elsif n.negative?
-      raise  "ArgumentError"
+      raise "ArgumentError"
     else
-      n * factorial(n-1)
+      n * factorial(n - 1)
     end
   end
+
   def reverse(string)
     string.reverse
   end
+
   def fizzbuzz(n)
     if n % 3 == 0 && n % 5 == 0
-    'fizzbuzz'
+      'fizzbuzz'
     elsif n % 5 == 0
       'buzz'
     elsif n % 3 == 0
