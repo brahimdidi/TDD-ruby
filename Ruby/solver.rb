@@ -4,6 +4,8 @@ class Solver
       1
     elsif n.negative?
       raise  "ArgumentError"
+    else
+      n * factorial(n-1)
     end
   end
 end
