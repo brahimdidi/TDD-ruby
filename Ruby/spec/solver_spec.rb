@@ -41,7 +41,7 @@ describe Solver do
   context "The method fizzbuzz(n) should return a string based on some rules" do
     it "returns 'fizz' when n is divisible by 5" do
       result = solver.reverse(15)
-      expected_result = "fizz"
+      expected_result = "buzz"
       expect(result).to eql(expected_result)
     end
   end
