@@ -12,12 +12,12 @@ class Solver
     string.reverse
   end
   def fizzbuzz(n)
-    if n % 3 == 0
-      'fizz'
+    if n % 3 == 0 && n % 5 == 0
+    'fizzbuzz'
     elsif n % 5 == 0
       'buzz'
-    elsif n % 3 == 0 && n % 5 == 0
-      'fizzbuzz'
+    elsif n % 3 == 0
+      'fizz'
     else
       n.to_s
     end
