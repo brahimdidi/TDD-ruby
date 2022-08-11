@@ -33,18 +33,19 @@ describe Solver do
 
   context "The method fizzbuzz(n) should return a string based on some rules" do
     it "returns 'fizz' when n is divisible by 3" do
-      result = solver.reverse(9)
+      result = solver.fizzbuzz(9)
       expected_result = "fizz"
       expect(result).to eql(expected_result)
     end
-  end
-  context "The method fizzbuzz(n) should return a string based on some rules" do
     it "returns 'fizz' when n is divisible by 5" do
-      result = solver.reverse(15)
+      result = solver.fizzbuzz(15)
       expected_result = "buzz"
       expect(result).to eql(expected_result)
     end
+    it "returns 'fizzbuzz' when n is divisible by 3 and 5" do
+      result = solver.fizzbuzz(30)
+      expected_result = "fizzbuzz"
+      expect(result).to eql(expected_result)
+    end
   end
-  
-
 end
